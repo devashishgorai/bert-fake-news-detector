@@ -13,6 +13,9 @@
 
 ## 🚀 Overview
 
+<img width="2940" height="1654" alt="image" src="https://github.com/user-attachments/assets/0fbd96f6-950d-4f0e-a25a-6de3e495f275" />
+
+
 This project detects whether a news article is **Fake** or **Real** using a **Fine-Tuned BERT (Bidirectional Encoder Representations from Transformers)** model.
 
 The application features a modern **Next.js frontend**, a **FastAPI backend**, and a locally hosted fine-tuned BERT model for high-speed inference.
