@@ -1,0 +1,56 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fake News Detector icon">
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 92) rotate(90) scale(108)">
+      <stop offset="0%" stop-color="#67E8F9" stop-opacity="1" />
+      <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGradient" x1="52" y1="44" x2="204" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0" />
+      <stop offset="1" stop-color="#94A3B8" />
+    </linearGradient>
+    <linearGradient id="markGradient" x1="78" y1="82" x2="178" y2="172" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F3D0" />
+      <stop offset="0.52" stop-color="#22D3EE" />
+      <stop offset="1" stop-color="#818CF8" />
+    </linearGradient>
+    <filter id="outerGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 0.85 0" />
+    </filter>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="#050816" />
+  <circle cx="128" cy="114" r="86" fill="url(#bgGlow)" />
+
+  <g filter="url(#cardShadow)">
+    <rect x="44" y="48" width="168" height="160" rx="34" fill="url(#cardGradient)" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.16" />
+  </g>
+
+  <g filter="url(#outerGlow)">
+    <path
+      d="M82 84C82 76.268 88.268 70 96 70H158C165.732 70 172 76.268 172 84V172C172 179.732 165.732 186 158 186H96C88.268 186 82 179.732 82 172V84Z"
+      fill="url(#markGradient)"
+      fill-opacity="0.16"
+      stroke="url(#markGradient)"
+      stroke-width="8"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <path d="M98 96H158" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round" />
+  <path d="M98 122H150" stroke="#C4B5FD" stroke-width="10" stroke-linecap="round" />
+  <path d="M98 148H142" stroke="#67E8F9" stroke-width="10" stroke-linecap="round" />
+  <path d="M156 145L176 145" stroke="#A7F3D0" stroke-width="10" stroke-linecap="round" />
+  <path d="M166 135L166 155" stroke="#A7F3D0" stroke-width="10" stroke-linecap="round" />
+
+  <circle cx="182" cy="82" r="14" fill="#22D3EE" fill-opacity="0.95" filter="url(#outerGlow)" />
+  <circle cx="182" cy="82" r="4" fill="#ECFEFF" />
+</svg>

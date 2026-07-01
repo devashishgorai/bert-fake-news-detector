@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fake News Detector",
   description: "Modern fake news detection UI with real-time prediction results.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
