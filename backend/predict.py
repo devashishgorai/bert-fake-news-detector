@@ -1,16 +1,15 @@
-from pathlib import Path
-
 import torch
 import torch.nn.functional as F
 from transformers import BertTokenizer, BertForSequenceClassification
 
-MODEL_PATH = Path(__file__).resolve().parent / "models" / "fake_news_bert"
+MODEL_ID = "devashishgorai/bert-fake-news-detector"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load model only once
-tokenizer = BertTokenizer.from_pretrained(str(MODEL_PATH))
-model = BertForSequenceClassification.from_pretrained(str(MODEL_PATH))
+tokenizer = BertTokenizer.from_pretrained(MODEL_ID)
+model = BertForSequenceClassification.from_pretrained(MODEL_ID)
+
 model.to(device)
 model.eval()
 
@@ -35,7 +34,6 @@ def predict_news(news: str):
     real_prob = probs[0][1].item()
 
     prediction = torch.argmax(probs, dim=1).item()
-
     confidence = max(fake_prob, real_prob) * 100
 
     return {
