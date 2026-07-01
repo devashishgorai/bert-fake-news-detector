@@ -162,7 +162,7 @@ http://localhost:3000
 
 The trained BERT model is **not included** in this repository because it exceeds GitHub's file size limit.
 
-Download the model and place it inside:
+Download the model and place it inside: https://drive.google.com/drive/folders/1fshxsOElzfXI7_rpn4GiNH2WwNh18LyJ
 
 ```text
 backend/models/fake_news_bert/
@@ -172,7 +172,8 @@ backend/models/fake_news_bert/
 
 ## 📸 Screenshots
 
-> Add screenshots of your application here.
+<img width="1908" height="1170" alt="image" src="https://github.com/user-attachments/assets/19a5980c-f1df-4244-a139-70e7d678d779" />
+
 
 ---
 
