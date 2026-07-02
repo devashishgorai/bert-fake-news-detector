@@ -186,8 +186,7 @@ Electronics & Communication Engineering (ECE)
 Passionate about AI • Full Stack Development • Machine Learning
 
 GitHub: https://github.com/devashishgorai
-
-LinkedIn: *(Add your LinkedIn URL here)*
+Linkedin: https://www.linkedin.com/in/devashishofficial/
 
 ---
 
